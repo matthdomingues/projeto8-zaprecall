@@ -1,15 +1,11 @@
-//import Navbar from "./Navbar";
-//import Corpo from "./Corpo";
-//import Mobile from "./Mobile";
+import Tela1 from "./Tela1";
 
 // lembrete: import React from 'react'; quando utilizar useState
 
-/*export default function App() {
+export default function App() {
     return (
-        <div>
-            <Navbar />
-            <Corpo />
-            <Mobile />
-        </div>
+        <>
+            <Tela1 />
+        </>
     );
-}*/
+}
