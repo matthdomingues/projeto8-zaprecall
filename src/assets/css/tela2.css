@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&family=Righteous&display=swap');
+
+/* 
+font-family: 'Recursive', sans-serif;
+font-family: 'Righteous', cursive;
+ */
+
+.tela2 {
+    height: 667px;
+    width: 375px;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: #FB6B6B;
+}
+
+/* TOPO */
+
+.topo {
+    width: 100%;
+    height: 153px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 48px;
+    box-sizing: border-box;
+
+}
+
+.titulo img {
+    height: 60px;
+    width: 52px;
+}
+
+.titulo h2 {
+    height: 43px;
+    width: 203px;
+    font-family: 'Righteous', cursive;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: -0.012em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* MEIO --- PERGUNTAS */
+
+.meio {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 444px;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.perguntas {}
+
+.pergunta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px 0px #00000026;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 23px;
+}
+
+.pergunta h3 {
+    font-family: 'Recursive', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #333333;
+}
+
+.pergunta img {
+    height: 23px;
+    width: 23px;
+}
+
+.card {
+    position: relative;
+    height: 131px;
+    width: 299px;
+    border-radius: 5px;
+    background: #FFFFD5;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    margin-bottom: 25px;
+
+}
+
+.card-frente {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    backface-visibility: hidden;
+    padding-top: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.card h1 {
+    height: 45px;
+    word-break: initial;
+    font-family: 'Recursive', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.card-frente img {
+    height: 20px;
+    width: 30px;
+    margin-top: 40px;
+    margin-left: 243px;
+}
+
+.card-verso {
+    display: flex;
+    flex-direction: column;
+    padding-top: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.botoes {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-around;
+}
+
+.botoes h2 {
+    font-family: 'Recursive', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.botao {
+    height: 37px;
+    width: 85px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pergunta-respondida-vermelho,
+.pergunta-respondida-amarelo,
+.pergunta-respondida-verde {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px 0px #00000026;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 23px;
+}
+
+.pergunta-respondida-vermelho h4,
+.pergunta-respondida-amarelo h4,
+.pergunta-respondida-verde h4 {
+    text-decoration: line-through;
+    font-family: 'Recursive', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.pergunta-respondida-vermelho h4 {
+    color: #FF3030;
+}
+
+.pergunta-respondida-amarelo h4 {
+    color: #FF922E;
+}
+
+.pergunta-respondida-verde h4 {
+    color: #2FBE34;
+}
+
+.vermelho {
+    background-color: #FF3030;
+}
+
+.amarelo {
+    background-color: #FF922E;
+}
+
+.verde {
+    background-color: #2FBE34;
+}
+
+/* FUNDO */
+
+.fundo {
+
+    height: 70px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px -4px 6px 0px #0000000D;
+    box-sizing: border-box;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    display: flex;
+}
+
+.fundo h4 {
+    font-family: 'Recursive', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #333333;
+}

@@ -1,28 +1,16 @@
-import React from "react";
+import logo from "./assets/img/logo.png"
 
-export default function Tela1() {
 
-    /* const [classe, setClasse] = React.useState("tela1");
-
-    function esconder() {
-        setClasse("escondido")
-    }
-    onClick={esconder()}
-    */
+export default function TelaInicial(props) {
 
     return (
-        <div class="tela1">
-            <img src="/img/logo.png" />
+        <div class={props.classe}>
+            <img src={logo} />
             <h1>ZapRecall</h1>
-            <button onClick={() => alert("funciona!")}>
+            <button onClick={props.funcao} >
                 <h2>Iniciar Recall!</h2>
             </button>
         </div>
     )
 
 }
-
-
-
-
-

@@ -1,11 +1,33 @@
-import Tela1 from "./Tela1";
+import React from "react";
+import "./assets/css/tela1.css";
+import "./assets/css/tela2.css";
+import "./assets/css/reset.css";
 
-// lembrete: import React from 'react'; quando utilizar useState
+import TelaInicial from "./Tela1";
+import TelaPergunta from "./Tela2";
 
 export default function App() {
+
+    const [tela1, setTela1] = React.useState("tela1 amostra");
+    const [tela2, setTela2] = React.useState("escondido");
+
+    function revelar() {
+        setTela1("escondido")
+        setTela2("tela2 amostra")
+    }
+
     return (
         <>
-            <Tela1 />
+            <TelaInicial classe={tela1}
+                funcao={revelar} />
+            <TelaPergunta classe={tela2} />
         </>
     );
+
 }
+
+/*
+
+    
+
+*/
