@@ -4,7 +4,7 @@ import logo from "./assets/img/logo.png"
 export default function TelaInicial(props) {
 
     return (
-        <div class={props.classe}>
+        <div className={props.classe}>
             <img src={logo} />
             <h1>ZapRecall</h1>
             <button onClick={props.funcao} >

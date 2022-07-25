@@ -2,7 +2,7 @@ import React from "react";
 
 import Flashcard from "./Flashcard"
 
-export default function Perguntas() {
+export default function Perguntas({ respondido, setRespondido }) {
 
     function montarFlashcards() {
         if (questoes.length === 0) {
@@ -16,7 +16,9 @@ export default function Perguntas() {
                     key={pergunta + index}
                     pergunta={pergunta}
                     resposta={resposta}
-                    index={index + 1} />
+                    index={index + 1}
+                    respondido={respondido}
+                    setRespondido={setRespondido} />
             })
         }
     }

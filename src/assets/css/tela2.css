@@ -219,25 +219,80 @@ font-family: 'Righteous', cursive;
 /* FUNDO */
 
 .fundo {
-
     height: 70px;
     width: 100%;
     background-color: #ffffff;
     box-shadow: 0px -4px 6px 0px #0000000D;
     box-sizing: border-box;
     align-items: center;
+    flex-direction: column;
     left: 0;
     bottom: 0;
     justify-content: center;
     display: flex;
 }
 
-.fundo h4 {
+.fundo.ampliado {
+    height: 171px;
+}
+
+.finalizado {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aviso {
+    display: flex;
+}
+
+
+.fundo h4,
+.fundo h2 {
     font-family: 'Recursive', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     color: #333333;
+}
+
+.fundo h2 {
+    height: 44px;
+    width: 222px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.fundo h4 {
+    margin-bottom: 5px;
+}
+
+.fundo h1 {
+    font-family: 'Recursive', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #333333;
+}
+
+.fundo .aviso img {
+    height: 23px;
+    width: 23px;
+    margin-right: 12px;
+
+}
+
+.fundo .icones img {
+    height: 23px;
+    width: 23px;
+    margin-right: 4px;
+}
+
+.fundo .icones {
+    display: flex;
+    align-items: center;
 }

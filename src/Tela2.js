@@ -1,33 +1,26 @@
 import React from "react"
 import Topo from "./Topo"
 import Perguntas from "./Perguntas"
+import Fundo from "./Fundo"
 
 export default function TelaPergunta(props) {
-
-    return (
-        <div class={props.classe}>
-            <Topo />
-            <div className="meio">
-                <div className="perguntas">
-                    <Perguntas />
-                </div>
-            </div>
-            <Fundo />
-        </div>
-    )
-}
-
-function Fundo() {
 
     const [respondido, setRespondido] = React.useState([]);
 
     return (
-        <div class="fundo">
-            <h4>{respondido.length}/8 CONCLUÍDOS</h4>
+        <div className={props.classe}>
+            <Topo />
+            <div className="meio">
+                <div className="perguntas">
+                    <Perguntas respondido={respondido} setRespondido={setRespondido} />
+                </div>
+            </div>
+            <Fundo respondido={respondido} />
         </div>
     )
-
 }
+
+
 
 
 
